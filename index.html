@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tech Task</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <div class="app">
+            <aside class="app__menu menu">
+                <div class="account">
+                    <figure class="account__photo">
+                        <img src="assets/images/kyle-ledbetter-600.png" alt="" />
+                    </figure>
+                    <div class="account__info">
+                        <div>
+                            <p class="account__name">Kyle Ledbetter</p>
+                            <p class="account__email">kyle@kyleledbetter.com</p>
+                        </div>
+
+                        <button class="account__dropdown-btn" aria-label="">
+                            <span class="material-icons"> arrow_drop_down </span>
+                        </button>
+                    </div>
+                </div>
+
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <button class="nav__btn">
+                                <span class="material-icons"> schedule </span>
+                                <span>Recent Contacts</span>
+                            </button>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__btn">
+                                <span class="material-icons"> archive </span>
+                                <span>Archive</span>
+                            </button>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__btn">
+                                <span class="material-icons"> done </span>
+                                <span>Replied</span>
+                            </button>
+                        </li>
+
+                        <div class="divider"></div>
+
+                        <li class="nav__item">
+                            <button class="nav__btn">
+                                <span class="material-icons"> send </span>
+                                <span>Sent</span>
+                            </button>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__btn">
+                                <span class="material-icons"> delete </span>
+                                <span>Trash</span>
+                            </button>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__btn">
+                                <span class="material-icons"> star </span>
+                                <span>Starred</span>
+                            </button>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__btn">
+                                <span class="material-icons"> forum </span>
+                                <span>Forums</span>
+                            </button>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__btn">
+                                <span class="material-icons"> flag </span>
+                                <span>Updates</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <div class="app__wrapper">
+                <header class="app__header header">
+                    <div>
+                        <button aria-label="menu" class="header__btn header__btn--menu">
+                            <span class="material-icons"> menu </span>
+                        </button>
+
+                        <h1 class="header__title">title</h1>
+                    </div>
+
+                    <div>
+                        <button aria-label="refresh" class="header__btn header__btn--refresh">
+                            <span class="material-icons"> refresh </span>
+                        </button>
+                        <button aria-label="toolbar" class="header__btn header__btn--toolbar">
+                            <span class="material-icons"> more_vert </span>
+                        </button>
+                    </div>
+                </header>
+
+                <main class="app__main">
+                    <div class="contact-list">
+                        <div class="block">
+                            <div class="block__icon">
+                                <span class="material-icons"> star </span>
+                            </div>
+
+                            <ul class="block__list block__list--w-border">
+                                <li class="block__item">
+                                    <button class="block__btn">
+                                        <figure>
+                                            <img src="assets/images/contact-photo-1.png" alt="" />
+                                        </figure>
+
+                                        <h2>Carolyn Campbell</h2>
+                                    </button>
+                                </li>
+                                <li class="block__item">
+                                    <button class="block__btn">
+                                        <figure>
+                                            <img src="assets/images/contact-photo-1.png" alt="" />
+                                        </figure>
+
+                                        <h2>Jennifer Carpenter</h2>
+                                    </button>
+                                </li>
+                                <li class="block__item">
+                                    <button class="block__btn">
+                                        <figure>
+                                            <img src="assets/images/contact-photo-1.png" alt="" />
+                                        </figure>
+
+                                        <h2>James Connors</h2>
+                                    </button>
+                                </li>
+                                <li class="block__item">
+                                    <button class="block__btn">
+                                        <figure>
+                                            <img src="assets/images/contact-photo-1.png" alt="" />
+                                        </figure>
+
+                                        <h2>Beverly Harris</h2>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end block -->
+
+                        <div class="block">
+                            <div class="block__icon">
+                                <span class="block__letter">a</span>
+                            </div>
+
+                            <ul class="block__list block__list--w-border">
+                                <li class="block__item">
+                                    <button class="block__btn">
+                                        <figure>
+                                            <img src="assets/images/contact-photo-1.png" alt="" />
+                                        </figure>
+
+                                        <h2>Brittany Delgado</h2>
+                                    </button>
+                                </li>
+                                <li class="block__item">
+                                    <button class="block__btn">
+                                        <figure>
+                                            <img src="assets/images/contact-photo-1.png" alt="" />
+                                        </figure>
+
+                                        <h2>Wayne Ray</h2>
+                                    </button>
+                                </li>
+                                <li class="block__item">
+                                    <button class="block__btn">
+                                        <figure>
+                                            <img src="assets/images/contact-photo-1.png" alt="" />
+                                        </figure>
+
+                                        <h2>Rachel Ross</h2>
+                                    </button>
+                                </li>
+                                <li class="block__item">
+                                    <button class="block__btn">
+                                        <figure>
+                                            <img src="assets/images/contact-photo-1.png" alt="" />
+                                        </figure>
+
+                                        <h2>Bruce Morales</h2>
+                                    </button>
+                                </li>
+                                <li class="block__item">
+                                    <button class="block__btn">
+                                        <figure>
+                                            <img src="assets/images/contact-photo-1.png" alt="" />
+                                        </figure>
+
+                                        <h2>Evelyn Morales</h2>
+                                    </button>
+                                </li>
+                                <li class="block__item">
+                                    <button class="block__btn">
+                                        <figure>
+                                            <img src="assets/images/contact-photo-1.png" alt="" />
+                                        </figure>
+
+                                        <h2>Marie Fuller</h2>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end block -->
+
+                        <div class="block block--w-border">
+                            <div class="block__icon">
+                                <span class="block__letter">b</span>
+                            </div>
+
+                            <ul class="block__list">
+                                <li class="block__item">
+                                    <button class="block__btn">
+                                        <figure>
+                                            <img src="assets/images/contact-photo-1.png" alt="" />
+                                        </figure>
+
+                                        <h2>Carolyn Campbell</h2>
+                                    </button>
+                                </li>
+                                <li class="block__item">
+                                    <button class="block__btn">
+                                        <figure>
+                                            <img src="assets/images/contact-photo-1.png" alt="" />
+                                        </figure>
+
+                                        <h2>Jennifer Carpenter</h2>
+                                    </button>
+                                </li>
+                                <li class="block__item">
+                                    <button class="block__btn">
+                                        <figure>
+                                            <img src="assets/images/contact-photo-1.png" alt="" />
+                                        </figure>
+
+                                        <h2>James Connors</h2>
+                                    </button>
+                                </li>
+                                <li class="block__item">
+                                    <button class="block__btn">
+                                        <figure>
+                                            <img src="assets/images/contact-photo-1.png" alt="" />
+                                        </figure>
+
+                                        <h2>Beverly Harris</h2>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end contact list block -->
+                    </div>
+
+                    <div class="contact">
+                        <header class="contact__header">
+                            <figure class="contact__photo">
+                                <!-- couldn't export the original image -->
+                                <img src="assets/images/pexels-photo-693651.jpeg" alt="" />
+                            </figure>
+
+                            <div class="contact__actions">
+                                <button>
+                                    <span class="material-icons"> arrow_back </span>
+                                </button>
+
+                                <button>
+                                    <span class="material-icons"> create </span>
+                                </button>
+
+                                <button>
+                                    <span class="material-icons"> more_vert </span>
+                                </button>
+                            </div>
+
+                            <div class="contact__name">
+                                <h2>James Connors</h2>
+                            </div>
+                        </header>
+
+                        <div class="contact__body">
+                            <div class="block">
+                                <div class="block__icon block__icon--alt">
+                                    <span class="material-icons"> phone </span>
+                                </div>
+
+                                <ul class="block__list block__list--w-border">
+                                    <li class="block__item block__item--flex">
+                                        <div class="block__contact">
+                                            <a href="tel:+" class="block__link"> (650) 555-1234 </a>
+                                            <small>Mobile</small>
+                                        </div>
+
+                                        <button class="block__hangouts-btn">
+                                            <svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M8.5 0C3.8 0 0 3.8 0 8.5C0 13.2 3.8 17 8.5 17H9V20.5C13.9 18.2 17 13 17 8.5C17 3.8 13.2 0 8.5 0ZM8 9L7 11H5.5L6.5 9H5V6H8V9ZM12 9L11 11H9.5L10.5 9H9V6H12V9Z"
+                                                    fill="#757575"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="block__item block__item--flex">
+                                        <div class="block__contact">
+                                            <a href="tel:+" class="block__link"> (650) 555-1234 </a>
+                                            <small>Mobile</small>
+                                        </div>
+
+                                        <button class="block__hangouts-btn">
+                                            <svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M8.5 0C3.8 0 0 3.8 0 8.5C0 13.2 3.8 17 8.5 17H9V20.5C13.9 18.2 17 13 17 8.5C17 3.8 13.2 0 8.5 0ZM8 9L7 11H5.5L6.5 9H5V6H8V9ZM12 9L11 11H9.5L10.5 9H9V6H12V9Z"
+                                                    fill="#757575"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="block">
+                                <div class="block__icon block__icon--alt">
+                                    <span class="material-icons"> email </span>
+                                </div>
+
+                                <ul class="block__list">
+                                    <li class="block__item">
+                                        <div>
+                                            <a href="mailto:" class="block__link"> aliconnors@example.com </a>
+                                            <small>Personal</small>
+                                        </div>
+                                    </li>
+                                    <li class="block__item">
+                                        <div>
+                                            <a href="mailto:" class="block__link"> ali_connors@example.com </a>
+                                            <small>Work</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="block">
+                                <div class="block__icon block__icon--alt">
+                                    <span class="material-icons"> place </span>
+                                </div>
+
+                                <address>
+                                    <ul class="block__list">
+                                        <li class="block__item">
+                                            <div class="block__contact">
+                                                <p class="block__address-line">2000 SW 1st Ave San Francisco, CA 94112</p>
+                                                <small>Home</small>
+                                            </div>
+                                        </li>
+                                        <li class="block__item">
+                                            <div class="block__contact">
+                                                <p class="block__address-line">1600 Amphitheatre Pkwy Mountain View, CA 94043</p>
+                                                <small>Work</small>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <button aria-label="create" class="create-fixed">
+                <span class="material-icons"> create </span>
+            </button>
+        </div>
+    </body>
+</html>

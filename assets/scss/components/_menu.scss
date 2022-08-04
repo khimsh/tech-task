@@ -1,0 +1,8 @@
+@use '../base/config' as *;
+
+.menu {
+    width: 100%;
+    height: 100vh;
+    background: $clr-nautral-100;
+    border-right: 1px solid $clr-neutral-200;
+}

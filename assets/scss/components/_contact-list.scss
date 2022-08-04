@@ -1,0 +1,14 @@
+.contact-list {
+    width: 60%;
+    max-height: 798px;
+    overflow: auto;
+    background-color: #fff;
+
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

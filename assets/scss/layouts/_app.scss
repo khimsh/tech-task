@@ -1,0 +1,18 @@
+.app {
+    position: relative;
+    display: flex;
+
+    &__menu {
+        flex: 0 0 256px;
+    }
+
+    &__wrapper {
+        flex-grow: 1;
+    }
+
+    &__main {
+        padding: 18px;
+        display: flex;
+        align-items: flex-start;
+    }
+}

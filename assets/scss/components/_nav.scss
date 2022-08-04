@@ -1,0 +1,35 @@
+.nav {
+    &__list {
+        padding-block: 22px;
+        display: flex;
+        flex-direction: column;
+
+        & > *:not(:last-child) {
+            /*  better to use gaps as spacers,
+                but IE doesn't support those */
+            margin-bottom: 27px;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: 0;
+        padding-inline: 25px;
+
+        span {
+            &:first-child {
+                color: #7d7d7d;
+            }
+
+            &:last-child {
+                margin-left: 33px;
+                font-weight: 400;
+                font-size: 15px;
+                color: #4d4d4e;
+            }
+        }
+    }
+}

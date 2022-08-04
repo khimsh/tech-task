@@ -133,8 +133,21 @@
     }
 
     &__hangouts-btn {
-        color: $clr-neutral-700;
         background-color: transparent;
         border: 0;
+
+        &:hover,
+        &:focus {
+            svg {
+                fill: #20a464;
+            }
+        }
+
+        svg {
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            fill: $clr-neutral-700;
+            transition: fill 150ms ease-in-out;
+        }
     }
 }

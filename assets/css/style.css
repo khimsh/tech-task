@@ -351,9 +351,17 @@ address {
   max-width: 100%;
 }
 .block__hangouts-btn {
-  color: #757575;
   background-color: transparent;
   border: 0;
+}
+.block__hangouts-btn:hover svg, .block__hangouts-btn:focus svg {
+  fill: #20a464;
+}
+.block__hangouts-btn svg {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #757575;
+  transition: fill 150ms ease-in-out;
 }
 
 .app {

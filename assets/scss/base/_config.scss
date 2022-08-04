@@ -10,12 +10,12 @@ $clr-neutral-800: #4d4d4e;
 $clr-primary: #2196f3;
 $clr-accent: #ff3e81;
 
-$clr-text-white: rgba(255, 255, 255, 0.87);
-$clr-text-dark: #4d4d4e;
-$clr-text-hover: $clr-primary;
-
 $clr-bg: $clr-neutral-200;
 $clr-theme: $clr-primary;
+
+$clr-text-white: rgba(255, 255, 255, 0.87);
+$clr-text-dark: #4d4d4e;
+$clr-text-hover: $clr-theme;
 
 // Font Sizes
 $text-100: 0.8125rem; // 13px

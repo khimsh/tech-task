@@ -1,5 +1,5 @@
-// Colors
-$clr-nautral-100: #fff;
+// Colours
+$clr-neutral-100: #fff;
 $clr-neutral-200: #eee;
 $clr-neutral-400: #d6d5d5;
 $clr-neutral-500: #999999;
@@ -14,7 +14,17 @@ $clr-text-white: rgba(255, 255, 255, 0.87);
 $clr-text-dark: #4d4d4e;
 $clr-text-hover: $clr-primary;
 
+$clr-bg: $clr-neutral-200;
+$clr-theme: $clr-primary;
+
 // Font Sizes
+$text-100: 0.8125rem; // 13px
+$text-200: 0.875rem; // 14px
+$text-300: 0.9375rem; // 15px
+$text-400: 1rem; // 16px
+$text-500: 1.3125rem; // 21px
+$text-600: 1.5rem; // 24px
+$text-700: 2.1875rem; // 35px
 
 // Provided colour pallete that wasn't used in the design
 $clr-blue-50: #e1f5fe;

@@ -1,11 +1,15 @@
 @use '../base/config' as *;
 
 .contact-list {
-    width: 60%;
+    width: 55%;
     max-width: 655px;
     max-height: 798px;
     overflow: auto;
-    background-color: $clr-nautral-100;
+    background-color: $clr-neutral-100;
+
+    @media (min-width: 1200px) {
+        width: 60%;
+    }
 
     -ms-overflow-style: none; /* Internet Explorer 10+ */
     scrollbar-width: none; /* Firefox */

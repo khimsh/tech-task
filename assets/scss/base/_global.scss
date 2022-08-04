@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: $clr-neutral-200;
+    background: $clr-bg;
 }
 
 img {
@@ -40,7 +40,7 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $clr-nautral-100;
+    color: $clr-neutral-100;
     background-color: $clr-accent;
     border: 0;
     border-radius: 100%;

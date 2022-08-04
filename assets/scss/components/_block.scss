@@ -11,17 +11,20 @@
 
     &__icon {
         width: 20px;
-        margin-left: 28px;
-        margin-right: 35px;
+        margin: 0 20px 0 10px;
         color: $clr-accent;
 
+        @media (min-width: 1200px) {
+            margin: 0 35px 0 28px;
+        }
+
         &--alt {
-            color: $clr-primary;
+            color: $clr-theme;
         }
     }
 
     &__letter {
-        font-size: 24px;
+        font-size: $text-600;
         text-transform: uppercase;
     }
 
@@ -81,7 +84,7 @@
 
         h2 {
             font-weight: 400;
-            font-size: 15px;
+            font-size: $text-300;
             color: $clr-text-dark;
             transition: color 150ms ease-in-out;
         }
@@ -94,7 +97,7 @@
         small {
             margin-top: 5px;
             font-weight: 400;
-            font-size: 13px;
+            font-size: $text-100;
             letter-spacing: -0.1px;
             color: $clr-neutral-500;
         }
@@ -102,10 +105,17 @@
 
     &__link {
         font-weight: 400;
-        font-size: 16px;
+        font-size: $text-400;
         letter-spacing: -0.1px;
         color: $clr-text-dark;
         text-decoration: none;
+        transition: color 150ms ease-in-out;
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: $clr-text-hover;
+        }
     }
 
     &__address {
@@ -116,7 +126,7 @@
 
     &__address-line {
         font-weight: 400;
-        font-size: 16px;
+        font-size: $text-400;
         letter-spacing: -0.1px;
         color: $clr-text-dark;
         max-width: 100%;

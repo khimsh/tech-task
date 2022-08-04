@@ -1,10 +1,14 @@
 @use '../base/config' as *;
 
 .contact {
-    width: 40%;
+    width: 45%;
     max-width: 433px;
     margin-left: 14px;
-    background-color: $clr-nautral-100;
+    background-color: $clr-neutral-100;
+
+    @media (min-width: 1200px) {
+        width: 40%;
+    }
 
     &__header {
         padding: 25px 26px 18px;
@@ -59,7 +63,7 @@
 
         h2 {
             font-weight: 400;
-            font-size: 35px;
+            font-size: $text-700;
             letter-spacing: -0.4px;
             color: $clr-text-white;
             text-transform: capitalize;

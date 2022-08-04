@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $clr-blue-500;
+    background-color: $clr-theme;
 
     & > div {
         display: flex;
@@ -22,13 +22,13 @@
     &__title {
         margin-left: 26px;
         font-weight: 400;
-        font-size: 21px;
-        color: $clr-nautral-100;
+        font-size: $text-500;
+        color: $clr-neutral-100;
         text-transform: capitalize;
     }
 
     &__btn {
-        color: $clr-nautral-100;
+        color: $clr-neutral-100;
 
         &--refresh {
             margin-right: 46px;

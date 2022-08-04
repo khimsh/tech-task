@@ -1,8 +1,10 @@
+@use '../base/config' as *;
+
 .contact {
     width: 40%;
     max-width: 433px;
     margin-left: 14px;
-    background-color: #fff;
+    background-color: $clr-nautral-100;
 
     &__header {
         padding: 25px 26px 18px;
@@ -46,7 +48,7 @@
         }
 
         button {
-            color: rgba(255, 255, 255, 0.87);
+            color: $clr-text-white;
             background-color: transparent;
             border: 0;
         }
@@ -59,7 +61,7 @@
             font-weight: 400;
             font-size: 35px;
             letter-spacing: -0.4px;
-            color: rgba(255, 255, 255, 0.87);
+            color: $clr-text-white;
             text-transform: capitalize;
         }
     }

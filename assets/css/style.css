@@ -79,11 +79,11 @@ address {
   margin-left: 26px;
   font-weight: 400;
   font-size: 21px;
-  color: #ffffff;
+  color: #fff;
   text-transform: capitalize;
 }
 .header__btn {
-  color: #ffffff;
+  color: #fff;
 }
 .header__btn--refresh {
   margin-right: 46px;
@@ -146,6 +146,9 @@ address {
   border: 0;
   padding: 0 25px;
 }
+.nav__btn:hover span:last-child, .nav__btn:focus span:last-child, .nav__btn.active span:last-child {
+  color: #2196f3;
+}
 .nav__btn span:first-child {
   color: #7d7d7d;
 }
@@ -154,6 +157,7 @@ address {
   font-weight: 400;
   font-size: 15px;
   color: #4d4d4e;
+  transition: color 150ms ease-in-out;
 }
 
 .contact-list {
@@ -277,6 +281,9 @@ address {
   background-color: transparent;
   border: 0;
 }
+.block__btn:hover h2, .block__btn:focus h2, .block__btn.active h2 {
+  color: #2196f3;
+}
 .block__btn figure {
   margin-right: 15px;
   width: 39px;
@@ -293,6 +300,7 @@ address {
   font-weight: 400;
   font-size: 15px;
   color: #4d4d4e;
+  transition: color 150ms ease-in-out;
 }
 .block__contact {
   display: flex;

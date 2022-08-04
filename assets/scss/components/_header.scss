@@ -23,12 +23,12 @@
         margin-left: 26px;
         font-weight: 400;
         font-size: 21px;
-        color: #ffffff;
+        color: $clr-nautral-100;
         text-transform: capitalize;
     }
 
     &__btn {
-        color: #ffffff;
+        color: $clr-nautral-100;
 
         &--refresh {
             margin-right: 46px;

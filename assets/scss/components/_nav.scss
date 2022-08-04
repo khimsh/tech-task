@@ -1,3 +1,5 @@
+@use '../base/config' as *;
+
 .nav {
     &__list {
         padding: 22px 0;
@@ -19,16 +21,27 @@
         border: 0;
         padding: 0 25px;
 
+        &:hover,
+        &:focus,
+        &.active {
+            span {
+                &:last-child {
+                    color: $clr-text-hover;
+                }
+            }
+        }
+
         span {
             &:first-child {
-                color: #7d7d7d;
+                color: $clr-neutral-600;
             }
 
             &:last-child {
                 margin-left: 33px;
                 font-weight: 400;
                 font-size: 15px;
-                color: #4d4d4e;
+                color: $clr-text-dark;
+                transition: color 150ms ease-in-out;
             }
         }
     }

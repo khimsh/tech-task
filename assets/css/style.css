@@ -61,7 +61,7 @@ address {
 .header {
   width: 100%;
   height: 64px;
-  padding-inline: 25px;
+  padding: 0 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -129,7 +129,7 @@ address {
 }
 
 .nav__list {
-  padding-block: 22px;
+  padding: 22px 0;
   display: flex;
   flex-direction: column;
 }
@@ -144,7 +144,7 @@ address {
   align-items: center;
   background-color: transparent;
   border: 0;
-  padding-inline: 25px;
+  padding: 0 25px;
 }
 .nav__btn span:first-child {
   color: #7d7d7d;
@@ -158,6 +158,7 @@ address {
 
 .contact-list {
   width: 60%;
+  max-width: 655px;
   max-height: 798px;
   overflow: auto;
   background-color: #fff;
@@ -173,6 +174,7 @@ address {
 
 .contact {
   width: 40%;
+  max-width: 433px;
   margin-left: 14px;
   background-color: #fff;
 }
@@ -187,7 +189,10 @@ address {
 }
 .contact__photo {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -200,6 +205,9 @@ address {
   position: relative;
   display: flex;
   justify-content: space-between;
+  /*  justify content doesn't work properly in IE11
+      margin bottom pushes up the first flex child */
+  margin-bottom: auto;
 }
 .contact__actions > *:nth-child(2) {
   margin-left: auto;
@@ -304,11 +312,17 @@ address {
   color: #4d4d4e;
   text-decoration: none;
 }
+.block__address {
+  /* IE word wrap fix for flex children */
+  flex: 1;
+  align-self: stretch;
+}
 .block__address-line {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: -0.1px;
   color: #4d4d4e;
+  max-width: 100%;
 }
 .block__hangouts-btn {
   color: #757575;
@@ -319,6 +333,7 @@ address {
 .app {
   position: relative;
   display: flex;
+  height: 100%;
 }
 .app__menu {
   flex: 0 0 256px;

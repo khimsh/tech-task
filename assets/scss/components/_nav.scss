@@ -1,6 +1,6 @@
 .nav {
     &__list {
-        padding-block: 22px;
+        padding: 22px 0;
         display: flex;
         flex-direction: column;
 
@@ -17,7 +17,7 @@
         align-items: center;
         background-color: transparent;
         border: 0;
-        padding-inline: 25px;
+        padding: 0 25px;
 
         span {
             &:first-child {
